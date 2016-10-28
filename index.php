@@ -61,7 +61,7 @@
 } 
 	?>
 
-	<form method="post" action="DateCalc1.php">
+	<form method="post" action="index.php">
 		<p><label for="Name">FirstName</label></p>
 			<input type="text" name="FirstName" id="FirstName" size="25" maxlength="25"  required = "required"/> 
 			

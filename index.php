@@ -86,11 +86,8 @@
 			@$dob = date('y-m-d', strtotime($_POST["DateofBirth"]));
 			$Cdateofbirth = Carbon::parse($dob);
 			$current = Carbon::now();
-			echo "<p>$firstname</p>";
-			echo "<p>$current</p>";
-			echo "<p>$Cdateofbirth</p>";
 			$daysalive = $Cdateofbirth->DiffInDays($current);
-			echo "<p>$daysalive</p>";
+			echo "<p>You have been $daysalive</p>";
 			$conn = @mysqli_connect($host, 
 			$user,
 			$pwd,
